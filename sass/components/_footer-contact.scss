@@ -1,0 +1,22 @@
+.address,
+.footer-address-list__mail,
+.footer-address-list__number {
+  @include font(14px, 400, 24px);
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color-theme-dark);
+}
+
+.footer-contact-address {
+  margin-bottom: 9px;
+  color: var(--logo-text-color-theme-dark);
+}
+
+
+.contact-list-link {
+  transition: color var(--animation-duration) var(--animation-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

@@ -1,0 +1,6 @@
+.title-section {
+  margin-bottom: 50px;
+  @include font(36px, 700, 60px);
+  text-align: center;
+  letter-spacing: 0.03em;
+}

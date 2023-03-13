@@ -1,0 +1,18 @@
+.footer-social-title {
+  @include font(14px, 700, 16px);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-text-color-theme-dark);
+}
+
+.footer__social-links-list {
+  margin-top: 20px;
+}
+
+.footer-link__social-links-list {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon__social-links-list {
+  fill: var(--logo-text-color-theme-dark);
+}

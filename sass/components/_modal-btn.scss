@@ -1,0 +1,27 @@
+.modal-btn {
+  margin-left: auto;
+  margin-right: auto;
+  width: 216px;
+  height: 50px;
+  padding: 8px 26px;
+  font-family: inherit;
+  @include font(16px, 700, 30px);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color-theme-dark);
+  cursor: pointer;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  transition: background-color var(--animation-duration)
+    var(--animation-timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-button-color);
+  }
+}

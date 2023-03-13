@@ -1,0 +1,41 @@
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.projects-list__item {
+  flex-basis: 370px;
+  background-color: #ffffff;
+}
+
+.projects-list__component-wrapper {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.projects-list__title {
+  @include font(18px, 700, 36px);
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color-theme-light);
+  margin-bottom: 4px;
+}
+
+.projects-list__description {
+  @include font(16px, 400, 30px);
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color-theme-light);
+}
+
+.projects-list__link {
+  transition: box-shadow var(--animation-duration)
+    var(--animation-timing-function);
+
+  &:hover,
+  &:focus {
+    display: block;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
