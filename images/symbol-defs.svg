@@ -152,7 +152,7 @@
 <path d="M11.839 4.618l12.809 3.445-5.448 5.159-12.811-3.447 5.449-5.157zM11.596 3.733l-6.796 6.434 14.643 3.938 6.794-6.434-14.642-3.938z"></path>
 <path d="M20.267 27.188l5.971-5.654-5.971-1.607v7.26z"></path>
 </symbol>
-<symbol id="icon-menu" viewBox="0 0 32 32">
+<symbol id="burger-menu-icon" viewBox="0 0 32 32">
 <path d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"></path>
 </symbol>
 <symbol id="icon-person-black" viewBox="0 0 32 32">
