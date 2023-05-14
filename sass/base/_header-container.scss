@@ -1,9 +1,10 @@
 .header__container {
-  @media screen and (max-width: 768px) {
-    justify-content: space-between;
-  }
   position: relative;
   display: flex;
   align-items: center;
-  // justify-content: space-between;
+   @media screen and (max-width: 768px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+  }
 }
