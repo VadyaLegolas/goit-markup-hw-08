@@ -143,6 +143,7 @@ address {
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
+    height: 600px;
     margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -387,6 +388,7 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
   }
   .mobile-navigation.is-open .header-social-list__item {
     display: -webkit-box;
@@ -472,15 +474,23 @@ address {
 .main-title {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
-  width: 696px;
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 1.36;
+  line-height: 1.62;
+  margin-bottom: 30px;
+  max-width: 360px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-text-color-theme-dark);
+}
+@media screen and (min-width: 1200px) {
+  .main-title {
+    max-width: 696px;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+  }
 }
 
 .title-section {
@@ -495,9 +505,8 @@ address {
 .modal-btn {
   margin-left: auto;
   margin-right: auto;
-  width: 216px;
+  width: 200px;
   height: 50px;
-  padding: 8px 26px;
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
@@ -508,7 +517,9 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   letter-spacing: 0.06em;
   color: var(--primary-text-color-theme-dark);
   cursor: pointer;
@@ -522,6 +533,12 @@ address {
 }
 .modal-btn:hover, .modal-btn:focus {
   background-color: var(--accent-button-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-btn {
+    width: 216px;
+    padding: 8px 26px;
+  }
 }
 
 .social-links-list {

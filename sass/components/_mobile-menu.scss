@@ -92,6 +92,7 @@
 
       .header-social-list {
         display: flex;
+        width: 100%;
       }
 
       .header-social-list__item {
@@ -117,10 +118,10 @@
     }
   }
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-    flex-grow: 1;    
+    flex-grow: 1;
   }
 }
 
@@ -164,5 +165,3 @@
   }
   cursor: pointer;
 }
-
-

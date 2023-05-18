@@ -1,14 +1,14 @@
 .modal-btn {
   margin-left: auto;
   margin-right: auto;
-  width: 216px;
+  width: 200px;
   height: 50px;
-  padding: 8px 26px;
   font-family: inherit;
   @include font(16px, 700, 30px);
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  // text-align: center;
   letter-spacing: 0.06em;
   color: var(--primary-text-color-theme-dark);
   cursor: pointer;
@@ -23,5 +23,9 @@
   &:hover,
   &:focus {
     background-color: var(--accent-button-color);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 216px;
+    padding: 8px 26px;
   }
 }
