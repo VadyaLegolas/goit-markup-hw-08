@@ -1,7 +1,16 @@
+.portfolio {
+  display: none;
+  @media screen and (min-width: 1200px){
+    display: block;
+    width: 100%;
+  }
+}
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  
 }
 
 .portfolio-list__item {
