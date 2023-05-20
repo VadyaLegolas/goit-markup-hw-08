@@ -28,6 +28,9 @@
   }
 }
 .about-list__title {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
   margin-bottom: 10px;
   @include font(14px, 700, 16px);
   letter-spacing: 0.03em;

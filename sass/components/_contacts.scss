@@ -2,6 +2,11 @@
   padding: 30px 32px;
 }
 
+.contacts-list__img {
+  width: 100%;
+  height: auto;
+}
+
 .contacts {
   background-color: var(--secondary-background-color);
 }
@@ -22,19 +27,16 @@
 }
 
 .contacts-list {
-  
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .contacts-list__item {
-  
-    flex-basis: 100%;
-    align-items: center;
-    justify-content: center;
-  
+  flex-basis: 100%;
+  align-items: center;
+  justify-content: center;
+
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 1 * 30px) / 2);
   }
