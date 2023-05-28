@@ -1,7 +1,15 @@
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+
+  width: 100%;
+  max-width: 450px;
+  height: 609px;
+  @media screen and (min-width: 768px) {
+    width: 528px;
+    max-width: 528px;
+    height: 581px;
+  }
+
   left: 50%;
   top: 50%;
   background: #ffffff;
@@ -67,7 +75,10 @@
     var(--animation-timing-function);
 
   &::placeholder {
-    @include font(12px, 400, 14px);
+    @include font(14px, 400, 16px);
+    @media screen and (min-width: 1200px) {
+      @include font(12px, 400, 14px);
+    }
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
   }
@@ -81,6 +92,7 @@
 
 .contact-form b {
   @include font(20px, 700, 23px);
+  display: block;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color-theme-light);
@@ -132,7 +144,10 @@
 .contact-form__checkbox-label {
   display: flex;
   align-items: center;
-  @include font(14px, 400, 24px);
+  @include font(12px, 400, 14px);
+  @media screen and (min-width: 1200px) {
+    @include font(14px, 400, 24px);
+  }
   letter-spacing: 0.03em;
   color: var(--secondary-text-color-theme-light);
 
