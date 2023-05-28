@@ -1,7 +1,49 @@
+.footer-address {
+  width: 232px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    margin-left: 0;
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+}
+
+
 .address {
   margin-top: 20px;
 }
 
 .footer-address-list__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
+// .footer-address {
+//   @media screen and (max-width: 1199px) {
+//     text-align: center;
+//     margin-left: auto;
+//     margin-right: auto;
+//     width: 232px;
+//   }
+
+//   @media screen and (max-width: 767px) {
+//     margin-bottom: 60px;
+//   }
+
+//   @media screen and (min-width: 768px) {
+//     margin-right: 165px;
+//   }
+//   @media screen and (min-width: 1200px) {
+    
+//     margin-right: 70px;
+//   }
+// }
+
+
+
+
