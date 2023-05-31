@@ -95,19 +95,18 @@
         display: flex;
         width: 100%;
         justify-content: left;
-         flex-wrap: wrap;
+        flex-wrap: wrap;
       }
 
       .header-social-list__item {
         display: flex;
         align-items: center;
         justify-content: center;
-       
-       
+
         &:not(:last-child):after {
           content: "";
           display: block;
-          
+
           width: 22px;
           height: 0;
           border: 1px solid rgba(33, 33, 33, 0.2);
