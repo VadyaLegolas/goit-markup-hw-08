@@ -306,6 +306,7 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    z-index: 1;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -315,7 +316,7 @@ address {
             justify-content: space-between;
     left: 0;
     top: -16px;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     overflow: auto;
     background-color: var(--primary-background-color);
@@ -445,6 +446,7 @@ address {
 
 .mobile-menu-btn {
   position: sticky;
+  z-index: 1;
   top: 0;
   right: 15px;
   background-color: transparent;
@@ -1492,6 +1494,7 @@ address {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  min-height: 404px;
 }
 
 .projects-list__item {
@@ -1505,7 +1508,6 @@ address {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
     max-width: 354px;
-    height: 440px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1520,6 +1522,11 @@ address {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .projects-list__component-wrapper {
+    height: calc(100% - 281px);
+  }
 }
 
 .projects-list__img {
@@ -1545,8 +1552,14 @@ address {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color-theme-light);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .projects-list__description {
+    margin-bottom: auto;
+  }
+}
 
 .projects-list__link {
+  height: 100%;
   -webkit-transition: -webkit-box-shadow var(--animation-duration) var(--animation-timing-function);
   transition: -webkit-box-shadow var(--animation-duration) var(--animation-timing-function);
   transition: box-shadow var(--animation-duration) var(--animation-timing-function);
