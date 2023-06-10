@@ -54,6 +54,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 address {
@@ -91,7 +93,6 @@ address {
 }
 
 .header__container {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,6 +126,7 @@ address {
 }
 
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
   height: 60px;
 }
@@ -297,16 +299,42 @@ address {
   }
 }
 
-@media screen and (max-width: 768px) {
+.mobile-navigation {
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
   .mobile-navigation {
-    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: var(--primary-background-color);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
   .mobile-navigation.is-open {
-    position: absolute;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    -webkit-transition: opacity var(--animation-duration) var(--animation-timing-function), visibility var(--animation-duration) var(--animation-timing-function);
+    transition: opacity var(--animation-duration) var(--animation-timing-function), visibility var(--animation-duration) var(--animation-timing-function);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-navigation__container {
+    height: 100%;
+    padding-right: 15px;
+    padding-left: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    z-index: 1;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -314,24 +342,14 @@ address {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    left: 0;
-    top: -16px;
-    width: 100vw;
-    height: 100vh;
-    overflow: auto;
-    background-color: var(--primary-background-color);
-    padding-right: 15px;
-    padding-left: 40px;
-    padding-top: 48px;
-    padding-bottom: 48px;
   }
-  .mobile-navigation.is-open .navigation {
+  .mobile-navigation__container .navigation {
     margin-bottom: auto;
   }
-  .mobile-navigation.is-open .nav-list__item:not(:last-child) {
+  .mobile-navigation__container .nav-list__item:not(:last-child) {
     margin-bottom: 32px;
   }
-  .mobile-navigation.is-open .nav-list__link {
+  .mobile-navigation__container .nav-list__link {
     position: relative;
     font-size: 40px;
     font-weight: 500;
@@ -341,13 +359,13 @@ address {
     -webkit-transition: color var(--animation-duration) var(--animation-timing-function);
     transition: color var(--animation-duration) var(--animation-timing-function);
   }
-  .mobile-navigation.is-open .nav-list__link:hover, .mobile-navigation.is-open .nav-list__link:focus {
+  .mobile-navigation__container .nav-list__link:hover, .mobile-navigation__container .nav-list__link:focus {
     color: var(--accent-color);
   }
-  .mobile-navigation.is-open .nav-list__link_active-page {
+  .mobile-navigation__container .nav-list__link_active-page {
     color: var(--accent-color);
   }
-  .mobile-navigation.is-open .nav-list__link_active-page::after {
+  .mobile-navigation__container .nav-list__link_active-page::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -357,7 +375,7 @@ address {
     bottom: -3px;
     left: 0;
   }
-  .mobile-navigation.is-open .header-contact-list {
+  .mobile-navigation__container .header-contact-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -367,10 +385,10 @@ address {
             flex-direction: column-reverse;
     margin-bottom: 64px;
   }
-  .mobile-navigation.is-open .header-contact-list .header-contact-list__icons {
+  .mobile-navigation__container .header-contact-list .header-contact-list__icons {
     display: none;
   }
-  .mobile-navigation.is-open .header-contact-list .header-contact-list__link {
+  .mobile-navigation__container .header-contact-list .header-contact-list__link {
     font-size: 24px;
     font-weight: 500;
     line-height: 1.17;
@@ -379,19 +397,19 @@ address {
     -webkit-transition: color var(--animation-duration) var(--animation-timing-function);
     transition: color var(--animation-duration) var(--animation-timing-function);
   }
-  .mobile-navigation.is-open .header-contact-list .header-contact-list__link:hover, .mobile-navigation.is-open .header-contact-list .header-contact-list__link:focus {
+  .mobile-navigation__container .header-contact-list .header-contact-list__link:hover, .mobile-navigation__container .header-contact-list .header-contact-list__link:focus {
     color: var(--accent-color);
   }
-  .mobile-navigation.is-open .header-contact-list .header-contact-list__number {
+  .mobile-navigation__container .header-contact-list .header-contact-list__number {
     font-size: 34px;
     font-weight: 500;
     line-height: 1.18;
     color: var(--accent-color);
   }
-  .mobile-navigation.is-open .header-contact-list .header-contact-list__item:not(:first-child) {
+  .mobile-navigation__container .header-contact-list .header-contact-list__item:not(:first-child) {
     margin-bottom: 32px;
   }
-  .mobile-navigation.is-open .header-social-list {
+  .mobile-navigation__container .header-social-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -402,7 +420,7 @@ address {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .mobile-navigation.is-open .header-social-list__item {
+  .mobile-navigation__container .header-social-list__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -413,7 +431,7 @@ address {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .mobile-navigation.is-open .header-social-list__item:not(:last-child):after {
+  .mobile-navigation__container .header-social-list__item:not(:last-child):after {
     content: "";
     display: block;
     width: 22px;
@@ -422,7 +440,7 @@ address {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
   }
-  .mobile-navigation.is-open .header-social-list__link {
+  .mobile-navigation__container .header-social-list__link {
     font-size: 18px;
     font-weight: 500;
     line-height: 1.22;
@@ -431,10 +449,12 @@ address {
   }
 }
 @media screen and (min-width: 768px) {
-  .mobile-navigation {
+  .mobile-navigation__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -446,7 +466,7 @@ address {
 
 .mobile-menu-btn {
   position: sticky;
-  z-index: 1;
+  z-index: 50;
   top: 0;
   right: 15px;
   background-color: transparent;
@@ -1533,7 +1553,7 @@ address {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .projects-list__title {

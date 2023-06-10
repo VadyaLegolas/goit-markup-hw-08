@@ -23,50 +23,52 @@
           class="logo-first-letters">Web</span>Studio</a>
 
       <div class="mobile-navigation" id="mobile-navigation" data-menu>
-        <nav class="navigation">
-          <ul class="nav-list list">
-            <li class="nav-list__item">
-              <a class="nav-list__link link nav-list__link_active-page" href="./index.html">Студія</a>
+        <div class=" mobile-navigation__container">
+          <nav class="navigation">
+            <ul class="nav-list list">
+              <li class="nav-list__item">
+                <a class="nav-list__link link nav-list__link_active-page" href="./index.html">Студія</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="header-contact-list list">
+            <li class="header-contact-list__item">
+              <a class="header-contact-list__link header-contact-list__mail link" href="mailto:info@devstudio.com">
+                <svg width="16px" height="12px" class="header-contact-list__icons">
+                  <use class="header-contact-list__email-icon" href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a>
             </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link link" href="">Контакти</a>
+            <li class="header-contact-list__item">
+              <a class="header-contact-list__link header-contact-list__number link" href="tel:+380961111111">
+                <svg width="10px" height="16px" class="header-contact-list__icons">
+                  <use class="header-contact-list__number-icon" href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a>
             </li>
           </ul>
-        </nav>
-
-        <ul class="header-contact-list list">
-          <li class="header-contact-list__item">
-            <a class="header-contact-list__link header-contact-list__mail link" href="mailto:info@devstudio.com">
-              <svg width="16px" height="12px" class="header-contact-list__icons">
-                <use class="header-contact-list__email-icon" href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a>
-          </li>
-          <li class="header-contact-list__item">
-            <a class="header-contact-list__link header-contact-list__number link" href="tel:+380961111111">
-              <svg width="10px" height="16px" class="header-contact-list__icons">
-                <use class="header-contact-list__number-icon" href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a>
-          </li>
-        </ul>
-        <ul class="header-social-list list">
-          <li class="header-social-list__item">
-            <a href="https://www.instagram.com/" class="header-social-list__link link" target="_blank">Instagram</a>
-          </li>
-          <li class="header-social-list__item">
-            <a href="https://twitter.com/" class="header-social-list__link link" target="_blank">Twitter</a>
-          </li>
-          <li class="header-social-list__item">
-            <a href="https://www.facebook.com/" class="header-social-list__link link" target="_blank">Facebook</a>
-          </li>
-          <li class="header-social-list__item">
-            <a href="https://ru.linkedin.com/" class="header-social-list__link link" target="_blank">LinkedIn</a>
-          </li>
-        </ul>
+          <ul class="header-social-list list">
+            <li class="header-social-list__item">
+              <a href="https://www.instagram.com/" class="header-social-list__link link" target="_blank">Instagram</a>
+            </li>
+            <li class="header-social-list__item">
+              <a href="https://twitter.com/" class="header-social-list__link link" target="_blank">Twitter</a>
+            </li>
+            <li class="header-social-list__item">
+              <a href="https://www.facebook.com/" class="header-social-list__link link" target="_blank">Facebook</a>
+            </li>
+            <li class="header-social-list__item">
+              <a href="https://ru.linkedin.com/" class="header-social-list__link link" target="_blank">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <button class="mobile-menu-btn js-menu-container" aria-expanded="false" aria-controls="mobile-navigation"
         lang="uk" aria-label="Перемикач мобільного меню" data-menu-button>
