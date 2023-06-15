@@ -21,9 +21,9 @@
     <div class="container header__container">
       <a class="logo logo_theme_light link" href="index.html" lang="en"><span
           class="logo-first-letters">Web</span>Studio</a>
-  
+
       <div class="mobile-navigation" id="mobile-navigation" data-menu>
-        <div class=" mobile-navigation__container">
+        <div class="mobile-navigation__container">
           <nav class="navigation">
             <ul class="nav-list list">
               <li class="nav-list__item">
@@ -37,7 +37,7 @@
               </li>
             </ul>
           </nav>
-  
+
           <ul class="header-contact-list list">
             <li class="header-contact-list__item">
               <a class="header-contact-list__link header-contact-list__mail link" href="mailto:info@devstudio.com">
@@ -70,8 +70,8 @@
           </ul>
         </div>
       </div>
-      <button class="mobile-menu-btn js-menu-container" aria-expanded="false" aria-controls="mobile-navigation" lang="uk"
-        aria-label="Перемикач мобільного меню" data-menu-button>
+      <button class="mobile-menu-btn js-menu-container" aria-expanded="false" aria-controls="mobile-navigation"
+        lang="uk" aria-label="Перемикач мобільного меню" data-menu-button>
         <svg class="mobile-menu-btn__burger-menu" width="40" height="40">
           <use href="./images/icons.svg#burger-menu-icon" class="mobile-menu-btn__burger-menu-icon js-open-menu"></use>
           <use href="./images/icons.svg#icon-close-black" class="mobile-menu-btn__burger-close-icon js-close-menu">
@@ -107,8 +107,34 @@
           <li class="projects-list__item">
             <a class="projects-list__link link" href="">
               <div class="projects-thumb">
-                <img class="projects-list__img" src="./images/portfolio/portfolio-img1.jpg" alt="project 1" width="370"
-                  height="294" />
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img1-desktop.webp 1x, ./images/portfolio/portfolio-img1-desktop@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+                  <source
+                    srcset="./images/portfolio/portfolio-img1-desktop.jpg 1x, ./images/portfolio/portfolio-img1-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+
+                  <!-- tablet -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img1-tablet.webp 1x, ./images/portfolio/portfolio-img1-tablet@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp" />
+                  <source
+                    srcset="../images/portfolio/portfolio-img1-tablet.jpg 1x, ../images/portfolio/portfolio-img1-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" />
+
+                  <!-- mobile -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img1-mobile.webp 1x, ./images/portfolio/portfolio-img1-mobile@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp" />
+                  <source
+                    srcset="./images/portfolio/portfolio-img1-mobile.jpg 1x, ./images/portfolio/portfolio-img1-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)" />
+
+                  <img class="projects-list__img" src="./images/portfolio/portfolio-img1-desktop.jpg" alt="project 1"
+                    width="370" height="294" />
+                </picture>
                 <p class="projects-thumb__paragraph">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу
@@ -124,8 +150,34 @@
           <li class="projects-list__item">
             <a class="projects-list__link link" href="">
               <div class="projects-thumb">
-                <img class="projects-list__img" src="./images/portfolio/portfolio-img2.jpg" alt="project 2" width="370"
-                  height="294" />
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img2-desktop.webp 1x, ./images/portfolio/portfolio-img2-desktop@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+                  <source
+                    srcset="./images/portfolio/portfolio-img2-desktop.jpg 1x, ./images/portfolio/portfolio-img2-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+
+                  <!-- tablet -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img2-tablet.webp 1x, ./images/portfolio/portfolio-img2-tablet@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp" />
+                  <source
+                    srcset="../images/portfolio/portfolio-img2-tablet.jpg 1x, ../images/portfolio/portfolio-img2-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" />
+
+                  <!-- mobile -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img2-mobile.webp 1x, ./images/portfolio/portfolio-img2-mobile@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp" />
+                  <source
+                    srcset="./images/portfolio/portfolio-img2-mobile.jpg 1x, ./images/portfolio/portfolio-img2-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)" />
+
+                  <img class="projects-list__img" src="./images/portfolio/portfolio-img2-desctop.jpg" alt="project 2"
+                    width="370" height="294" />
+                </picture>
                 <p class="projects-thumb__paragraph">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу
@@ -143,8 +195,34 @@
           <li class="projects-list__item">
             <a class="projects-list__link link" href="">
               <div class="projects-thumb">
-                <img class="projects-list__img" src="./images/portfolio/portfolio-img3.jpg" alt="project 3" width="370"
-                  height="294" />
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img3-desktop.webp 1x, ./images/portfolio/portfolio-img3-desktop@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+                  <source
+                    srcset="./images/portfolio/portfolio-img3-desktop.jpg 1x, ./images/portfolio/portfolio-img3-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+
+                  <!-- tablet -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img3-tablet.webp 1x, ./images/portfolio/portfolio-img3-tablet@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp" />
+                  <source
+                    srcset="../images/portfolio/portfolio-img3-tablet.jpg 1x, ../images/portfolio/portfolio-img3-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" />
+
+                  <!-- mobile -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img3-mobile.webp 1x, ./images/portfolio/portfolio-img3-mobile@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp" />
+                  <source
+                    srcset="./images/portfolio/portfolio-img3-mobile.jpg 1x, ./images/portfolio/portfolio-img3-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)" />
+
+                  <img class="projects-list__img" src="./images/portfolio/portfolio-img3-destop.jpg" alt="project 3"
+                    width="370" height="294" />
+                </picture>
                 <p class="projects-thumb__paragraph">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу
@@ -162,8 +240,34 @@
           <li class="projects-list__item">
             <a class="projects-list__link link" href="">
               <div class="projects-thumb">
-                <img class="projects-list__img" src="./images/portfolio/portfolio-img4.jpg" alt="project 4" width="370"
-                  height="294" />
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img4-desktop.webp 1x, ./images/portfolio/portfolio-img4-desktop@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+                  <source
+                    srcset="./images/portfolio/portfolio-img4-desktop.jpg 1x, ./images/portfolio/portfolio-img4-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+
+                  <!-- tablet -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img4-tablet.webp 1x, ./images/portfolio/portfolio-img4-tablet@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp" />
+                  <source
+                    srcset="../images/portfolio/portfolio-img4-tablet.jpg 1x, ../images/portfolio/portfolio-img4-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" />
+
+                  <!-- mobile -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img4-mobile.webp 1x, ./images/portfolio/portfolio-img4-mobile@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp" />
+                  <source
+                    srcset="./images/portfolio/portfolio-img4-mobile.jpg 1x, ./images/portfolio/portfolio-img4-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)" />
+
+                  <img class="projects-list__img" src="./images/portfolio/portfolio-img4-desktop.jpg" alt="project 4"
+                    width="370" height="294" />
+                </picture>
                 <p class="projects-thumb__paragraph">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу
@@ -181,8 +285,34 @@
           <li class="projects-list__item">
             <a class="projects-list__link link" href="">
               <div class="projects-thumb">
-                <img class="projects-list__img" src="./images/portfolio/portfolio-img5.jpg" alt="project 5" width="370"
-                  height="294" />
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img5-desktop.webp 1x, ./images/portfolio/portfolio-img5-desktop@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+                  <source
+                    srcset="./images/portfolio/portfolio-img5-desktop.jpg 1x, ./images/portfolio/portfolio-img5-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+
+                  <!-- tablet -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img5-tablet.webp 1x, ./images/portfolio/portfolio-img5-tablet@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp" />
+                  <source
+                    srcset="../images/portfolio/portfolio-img5-tablet.jpg 1x, ../images/portfolio/portfolio-img5-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" />
+
+                  <!-- mobile -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img5-mobile.webp 1x, ./images/portfolio/portfolio-img5-mobile@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp" />
+                  <source
+                    srcset="./images/portfolio/portfolio-img5-mobile.jpg 1x, ./images/portfolio/portfolio-img5-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)" />
+
+                  <img class="projects-list__img" src="./images/portfolio/portfolio-img5-desktop.jpg" alt="project 5"
+                    width="370" height="294" />
+                </picture>
                 <p class="projects-thumb__paragraph">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу
@@ -200,8 +330,34 @@
           <li class="projects-list__item">
             <a class="projects-list__link link" href="">
               <div class="projects-thumb">
-                <img class="projects-list__img" src="./images/portfolio/portfolio-img6.jpg" alt="project 6" width="370"
-                  height="294" />
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img6-desktop.webp 1x, ./images/portfolio/portfolio-img6-desktop@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+                  <source
+                    srcset="./images/portfolio/portfolio-img6-desktop.jpg 1x, ./images/portfolio/portfolio-img6-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+
+                  <!-- tablet -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img6-tablet.webp 1x, ./images/portfolio/portfolio-img6-tablet@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp" />
+                  <source
+                    srcset="../images/portfolio/portfolio-img6-tablet.jpg 1x, ../images/portfolio/portfolio-img6-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" />
+
+                  <!-- mobile -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img6-mobile.webp 1x, ./images/portfolio/portfolio-img6-mobile@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp" />
+                  <source
+                    srcset="./images/portfolio/portfolio-img6-mobile.jpg 1x, ./images/portfolio/portfolio-img6-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)" />
+
+                  <img class="projects-list__img" src="./images/portfolio/portfolio-img6-desktop.jpg" alt="project 6"
+                    width="370" height="294" />
+                </picture>
                 <p class="projects-thumb__paragraph">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу
@@ -219,8 +375,34 @@
           <li class="projects-list__item">
             <a class="projects-list__link link" href="">
               <div class="projects-thumb">
-                <img class="projects-list__img" src="./images/portfolio/portfolio-img7.jpg" alt="project 7" width="370"
-                  height="294" />
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img7-desktop.webp 1x, ./images/portfolio/portfolio-img7-desktop@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+                  <source
+                    srcset="./images/portfolio/portfolio-img7-desktop.jpg 1x, ./images/portfolio/portfolio-img7-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+
+                  <!-- tablet -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img7-tablet.webp 1x, ./images/portfolio/portfolio-img7-tablet@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp" />
+                  <source
+                    srcset="../images/portfolio/portfolio-img7-tablet.jpg 1x, ../images/portfolio/portfolio-img7-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" />
+
+                  <!-- mobile -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img7-mobile.webp 1x, ./images/portfolio/portfolio-img7-mobile@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp" />
+                  <source
+                    srcset="./images/portfolio/portfolio-img7-mobile.jpg 1x, ./images/portfolio/portfolio-img7-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)" />
+
+                  <img class="projects-list__img" src="./images/portfolio/portfolio-img7-desktop.jpg" alt="project 7"
+                    width="370" height="294" />
+                </picture>
                 <p class="projects-thumb__paragraph">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу
@@ -238,8 +420,34 @@
           <li class="projects-list__item">
             <a class="projects-list__link link" href="">
               <div class="projects-thumb">
-                <img class="projects-list__img" src="./images/portfolio/portfolio-img8.jpg" alt="project 8" width="370"
-                  height="294" />
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img8-desktop.webp 1x, ./images/portfolio/portfolio-img8-desktop@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+                  <source
+                    srcset="./images/portfolio/portfolio-img8-desktop.jpg 1x, ./images/portfolio/portfolio-img8-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+
+                  <!-- tablet -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img8-tablet.webp 1x, ./images/portfolio/portfolio-img8-tablet@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp" />
+                  <source
+                    srcset="../images/portfolio/portfolio-img8-tablet.jpg 1x, ../images/portfolio/portfolio-img8-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" />
+
+                  <!-- mobile -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img8-mobile.webp 1x, ./images/portfolio/portfolio-img8-mobile@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp" />
+                  <source
+                    srcset="./images/portfolio/portfolio-img8-mobile.jpg 1x, ./images/portfolio/portfolio-img8-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)" />
+
+                  <img class="projects-list__img" src="./images/portfolio/portfolio-img8-desktop.jpg" alt="project 8"
+                    width="370" height="294" />
+                </picture>
                 <p class="projects-thumb__paragraph">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу
@@ -257,8 +465,34 @@
           <li class="projects-list__item">
             <a class="projects-list__link link" href="">
               <div class="projects-thumb">
-                <img class="projects-list__img" src="./images/portfolio/portfolio-img9.jpg" alt="project 9" width="370"
-                  height="294" />
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img9-desktop.webp 1x, ./images/portfolio/portfolio-img9-desktop@2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp" />
+                  <source
+                    srcset="./images/portfolio/portfolio-img9-desktop.jpg 1x, ./images/portfolio/portfolio-img9-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+
+                  <!-- tablet -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img9-tablet.webp 1x, ./images/portfolio/portfolio-img9-tablet@2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp" />
+                  <source
+                    srcset="../images/portfolio/portfolio-img9-tablet.jpg 1x, ../images/portfolio/portfolio-img9-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)" />
+
+                  <!-- mobile -->
+                  <source
+                    srcset="./images/portfolio/portfolio-img9-mobile.webp 1x, ./images/portfolio/portfolio-img9-mobile@2x.webp 2x"
+                    media="(max-width: 767px)" type="image/webp" />
+                  <source
+                    srcset="./images/portfolio/portfolio-img9-mobile.jpg 1x, ./images/portfolio/portfolio-img9-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)" />
+
+                  <img class="projects-list__img" src="./images/portfolio/portfolio-img9-desktop.jpg" alt="project 9"
+                    width="370" height="294" />
+                </picture>
                 <p class="projects-thumb__paragraph">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу

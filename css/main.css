@@ -349,8 +349,18 @@ address {
     -webkit-transition: opacity var(--animation-duration) var(--animation-timing-function), visibility var(--animation-duration) var(--animation-timing-function);
     transition: opacity var(--animation-duration) var(--animation-timing-function), visibility var(--animation-duration) var(--animation-timing-function);
   }
+  .mobile-navigation.is-open body.lock {
+    overflow: hidden;
+  }
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .mobile-navigation__container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (max-width: 767px) {
   .mobile-navigation__container {
     height: 100%;
@@ -528,6 +538,18 @@ address {
 }
 .mobile-menu-btn__burger-menu:hover, .mobile-menu-btn__burger-menu:focus {
   fill: var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+  body.lock {
+    overflow-y: hidden;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body.lock {
+    overflow-y: hidden;
+  }
 }
 
 .main-title {
