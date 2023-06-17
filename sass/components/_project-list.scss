@@ -25,10 +25,8 @@
 
 
 .projects-list__component-wrapper {
+  flex-grow: 1;
   padding: 20px 24px;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    height: calc(100% - 281px);
-  }
   border: 1px solid #eeeeee;
   border-top: none;
 }
@@ -56,6 +54,8 @@
 }
 
 .projects-list__link {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   transition: box-shadow var(--animation-duration)
     var(--animation-timing-function);
