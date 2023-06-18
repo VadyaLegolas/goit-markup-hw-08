@@ -1559,16 +1559,6 @@ address {
           justify-content: center;
   margin-bottom: 40px;
 }
-@media screen and (max-width: 767px) {
-  .filters-list {
-    width: 334px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-}
 @media screen and (min-width: 768px) {
   .filters-list {
     margin-bottom: 30px;
@@ -1577,6 +1567,16 @@ address {
 @media screen and (min-width: 1200px) {
   .filters-list {
     margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .filters-list {
+    width: 334px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -1606,6 +1606,11 @@ address {
   transition: background-color var(--animation-duration) var(--animation-timing-function), color var(--animation-duration) var(--animation-timing-function), -webkit-box-shadow var(--animation-duration) var(--animation-timing-function);
   transition: background-color var(--animation-duration) var(--animation-timing-function), box-shadow var(--animation-duration) var(--animation-timing-function), color var(--animation-duration) var(--animation-timing-function);
   transition: background-color var(--animation-duration) var(--animation-timing-function), box-shadow var(--animation-duration) var(--animation-timing-function), color var(--animation-duration) var(--animation-timing-function), -webkit-box-shadow var(--animation-duration) var(--animation-timing-function);
+}
+@media screen and (max-width: 479px) {
+  .filters-list__button {
+    font-size: calc((100vw - 100px) / 380 * 14 + 2px);
+  }
 }
 .filters-list__button:hover, .filters-list__button:focus {
   background-color: var(--accent-color);
@@ -1729,6 +1734,12 @@ address {
   transition: -webkit-transform var(--animation-duration) var(--animation-timing-function);
   transition: transform var(--animation-duration) var(--animation-timing-function);
   transition: transform var(--animation-duration) var(--animation-timing-function), -webkit-transform var(--animation-duration) var(--animation-timing-function);
+}
+@media screen and (max-width: 479px) {
+  .projects-thumb__paragraph {
+    font-size: calc((100vw - 100px) / 380 * 16 + 2px);
+    padding-top: 40px;
+  }
 }
 .projects-list__link:hover .projects-thumb__paragraph, .projects-list__link:focus .projects-thumb__paragraph {
   -webkit-transform: translateY(0);
