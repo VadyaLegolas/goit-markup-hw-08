@@ -1034,6 +1034,11 @@ address {
   letter-spacing: 0.03em;
   color: var(--primary-text-color-theme-light);
 }
+@media screen and (max-width: 479px) {
+  .contact-form b {
+    font-size: calc((100vw - 100px) / 380 * 18 + 2px);
+  }
+}
 
 .contact-form__text {
   font-size: 12px;
@@ -1098,7 +1103,7 @@ address {
 }
 @media screen and (max-width: 479px) {
   .contact-form__checkbox-label {
-    font-size: calc((100vw - 100px) / 380 * 9 + 2px);
+    font-size: calc((100vw - 100px) / 380 * 10 + 2px);
   }
 }
 .contact-form__checkbox-label a {

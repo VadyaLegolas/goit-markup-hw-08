@@ -100,6 +100,9 @@
 
 .contact-form b {
   @include font(20px, 700, 23px);
+  @media screen and (max-width: 479px) {
+    font-size: calc((100vw - 100px) / (480 - 100) * (20 - 2) + 2px);
+  }
   display: block;
   text-align: center;
   letter-spacing: 0.03em;
@@ -157,7 +160,7 @@
     @include font(14px, 400, 24px);
   }
   @media screen and (max-width: 479px) {
-    font-size: calc((100vw - 100px) / (480 - 100) * (11 - 2) + 2px);
+    font-size: calc((100vw - 100px) / (480 - 100) * (12 - 2) + 2px);
   }
   letter-spacing: 0.03em;
   color: var(--secondary-text-color-theme-light);
