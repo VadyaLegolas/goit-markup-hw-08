@@ -4,21 +4,30 @@
   width: 100%;
   max-width: 450px;
   height: 609px;
+  overflow-x: auto;
   @media screen and (min-width: 768px) {
-    width: 528px;
+    // width: 528px;
     max-width: 528px;
     height: 581px;
   }
 
   left: 50%;
   top: 50%;
+
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
-
   transform: translate(-50%, -50%) scale(1);
+
+  @media screen and (max-height: 608px) {
+    top: 0;
+    transform: translate(-50%) scale(1);
+  }
+  @media screen and (max-width: 479px) {
+    
+  }
 
   transition: transform var(--animation-duration)
     var(--animation-timing-function);
@@ -149,6 +158,9 @@
   @media screen and (min-width: 1200px) {
     @include font(14px, 400, 24px);
   }
+  @media screen and (max-width: 479px) {
+    font-size: calc( (100vw - 100px)/(480 - 100) * (11 - 2) + 2px);
+  }
   letter-spacing: 0.03em;
   color: var(--secondary-text-color-theme-light);
 
@@ -166,6 +178,12 @@
     content: "";
     cursor: pointer;
 
+    @media screen and (max-width: 479px) {
+      width: 12px;
+      height: 11px;
+      margin-right: 3px;
+    }
+
     .contact-form__checkbox:focus + &,
     .contact-form__checkbox:hover + & {
       /* border-color: var(--accent-color); */
@@ -175,6 +193,7 @@
     .contact-form__checkbox:checked + & {
       border: none;
       background-image: url("../images/svg/checked.svg");
+      background-size: cover;
     }
   }
 }

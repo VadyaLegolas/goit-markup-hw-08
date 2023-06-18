@@ -55,6 +55,9 @@
       position: relative;
       z-index: 2;
       @include font(40px, 500, 47px);
+      @media screen and (max-width: 479px) {
+        font-size: calc((100vw - 100px) / (480 - 100) * (40 - 2) + 2px);
+      }
       letter-spacing: 0.02em;
       color: var(--primary-text-color-theme-light);
 
@@ -94,6 +97,9 @@
 
       .header-contact-list__link {
         @include font(24px, 500, 28px);
+        @media screen and (max-width: 479px) {
+          font-size: calc((100vw - 100px) / (480 - 100) * (24 - 2) + 2px);
+        }
         letter-spacing: 0.02em;
         // color: var(--primary-text-color-theme-light);
 
@@ -112,6 +118,9 @@
 
       .header-contact-list__number {
         @include font(34px, 500, 40px);
+        @media screen and (max-width: 479px) {
+          font-size: calc((100vw - 100px) / (480 - 100) * (34 - 2) + 2px);
+        }
         color: var(--accent-color);
       }
 
@@ -145,6 +154,9 @@
 
     .header-social-list__link {
       @include font(18px, 500, 22px);
+      @media screen and (max-width: 479px) {
+        font-size: calc((100vw - 100px) / (480 - 100) * (18 - 2) + 2px);
+      }
       letter-spacing: 0.02em;
       color: var(--accent-color);
     }
