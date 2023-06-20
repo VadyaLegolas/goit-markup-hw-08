@@ -1576,7 +1576,7 @@ address {
 }
 @media screen and (max-width: 767px) {
   .filters-list {
-    width: 334px;
+    width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: start;
